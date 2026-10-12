@@ -1,0 +1,58 @@
+# Environment variables and secrets
+.env
+.env.*
+*.pem
+*.key
+*.cert
+
+# Python cache & build outputs
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# CRITICAL: NEVER COMMIT PRIVATE FILES
+# These files contain proprietary SKP, SDK, and business logic
+# and must remain in thundervault_core (private repository) only
+
+# Private gateway and sharding logic
+github_private_gateway.py
+thundervault_gateway.py
+thundervault_core/
+skp_*.py
+sdk_*.py
+
+# Private credentials and keys
+masterkey.txt
+credentials.json
+vault_*.json
+
+# Business and financial data
+B2B_OPERATIONS/
+THUNDERVAULT_BUSINESS_STRATEGY/
+04_B2B_OPERATIONS/
+customer_data/
+financial_metrics.json
+legal_documents/
+*.xlsx
+*.docx
+
+# Node sharding and vault logic
+sharding_*.py
+vault_access_*.py
+node_rehydration_*.py
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
